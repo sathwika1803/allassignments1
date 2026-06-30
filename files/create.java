@@ -10,7 +10,7 @@ public class create {
                 System.out.println("new file:"+f1.getName());
             }
             else{
-                System.out.println("file already exist");
+                System.out.println("file already existtt");
             }
         }
             catch(IOException e){

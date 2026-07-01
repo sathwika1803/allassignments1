@@ -1,0 +1,15 @@
+create database student;
+use student;
+create table student(name varchar(200), age int, marks int);
+alter table student add column gender char(2) after name;
+alter table student rename column name to fullname;
+insert into student(fullname,gender,age,marks)values("RathkanthiSathwika","F",21,100),("SriramVaishanavi","M",20,99),("akshayThummala","M",24,95),("poteSrihari","M",20,100);
+select fullname,gender from student;
+select distinct fullname from student;
+select fullname as stu_name,gender as stu_gender from student;
+select fullname from student where gender="f";
+select fullname from student where marks>97;
+select fullname from student where name like"%Thummala";
+select marks from student order by marks asc;
+select marks from student order by marks desc limit 3 offset 0;
+ 
